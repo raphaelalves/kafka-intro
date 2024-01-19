@@ -14,7 +14,7 @@ await producer.connect();
 for (let i=0; i<=100; i++) {
     const PARTITION_KEY = Math.round(Math.random() * 100).toString();
     await producer.send({
-        topic: 'randomTopic',
+        topic: 'salesTopic',
         messages: [
             { key: PARTITION_KEY, value: `This is the ${i} message!` }
         ]

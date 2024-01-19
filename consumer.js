@@ -13,7 +13,7 @@ const consumer = kafka.consumer({
 
 await consumer.connect();
 await consumer.subscribe({
-    topic: 'randomTopic'
+    topic: 'salesTopic'
 });
 
 await consumer.run({
